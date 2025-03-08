@@ -40,9 +40,6 @@ class Program
             Console.WriteLine($"{name()}, your number squared is {SquareNumber(favoriteNumber())}.");
 
         }
-        // string userName = name();
-        // int userNumber = favoriteNumber();
-        // int numSquared = SquareNumber(userNumber);
         Display(welcome());
 
     }
