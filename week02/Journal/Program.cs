@@ -4,8 +4,8 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 
-// I went above and boyond by making a 6th option that will find all of the entries made on a specific date, 
-// and this will alow the user to find an entry made on a specific day.
+// I went above and beyond by making a 6th option that will find all of the entries made on a specific date, 
+// and this will allow the user to find an entry made on a specific day.
 
 class Program
 {
