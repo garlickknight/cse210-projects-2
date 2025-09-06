@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel;
 
 class Program
 {
@@ -21,10 +22,12 @@ class Program
         Console.WriteLine("What is your guess?");
         string guessPrompt = Console.ReadLine();
         int guess = int.Parse(guessPrompt);
+        int guessNumber = 0;
+        string at = "";
         //These are a set of condition statements to guide the user through the game until they guess the magic number.
         do
         {
-            
+
             if (magicNumber >= guess)
             {
                 Console.WriteLine("higher :)");
@@ -43,9 +46,23 @@ class Program
             if (magicNumber == guess)
             {
                 Console.WriteLine("Great Job! You guessed it!");
-            }
+                if (guessNumber > 5)
+                {
+                    at = ":(";
 
-            
+                }
+                else
+                {
+                    at = ":)";
+                }
+
+                Console.WriteLine($"You Guessed {guessNumber} times {at}");
+            }
+            guessNumber = guessNumber + 1;
+
+
+
+
 
         }
         while (magicNumber != guess);
