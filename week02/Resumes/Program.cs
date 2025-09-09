@@ -14,12 +14,13 @@ class Program
 
         Resume resume = new Resume();
         resume._name = "Joseph Garlick";
+        resume.
 
-        resume._Jobs.Add("Physical Therapy technition");
-        resume._Jobs.Add("Physical Therapy Assistant");
-        resume._Jobs.Add("Physical Therapist");
-        resume._Jobs.Add("Shop Fabricator");
-        resume._Jobs.Add("Missionary");
-        resume._resumeDesplay();
+        // resume._Jobs.Add("Physical Therapy technition");
+        // resume._Jobs.Add("Physical Therapy Assistant");
+        // resume._Jobs.Add("Physical Therapist");
+        // resume._Jobs.Add("Shop Fabricator");
+        // resume._Jobs.Add("Missionary");
+        resume._resumeDisplay();
     }
 }
