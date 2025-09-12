@@ -10,10 +10,19 @@ class Program
         PhysicalTherapy._jobTitle = "Physical Therapist";
         PhysicalTherapy._startYear = 2023;
         PhysicalTherapy._endYear = 2026;
-        PhysicalTherapy._showJob();
+        // PhysicalTherapy._showJob();
+        Job crumblBaker = new Job();
+        crumblBaker._company = "Crumbl";
+        crumblBaker._jobTitle = "Baker";
+        crumblBaker._startYear = 2023;
+        crumblBaker._endYear = 2025;
+        // crumblBaker._showJob();
+        
 
         Resume resume = new Resume();
         resume._name = "Joseph Garlick";
+        resume._Jobs.Add(PhysicalTherapy);
+        resume._Jobs.Add(crumblBaker);
         resume._resumeDisplay();
 
         // resume._Jobs.Add("Physical Therapy technition");
@@ -21,6 +30,5 @@ class Program
         // resume._Jobs.Add("Physical Therapist");
         // resume._Jobs.Add("Shop Fabricator");
         // resume._Jobs.Add("Missionary");
-        resume._resumeDisplay();
     }
 }
