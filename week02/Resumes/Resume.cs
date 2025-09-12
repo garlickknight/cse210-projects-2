@@ -6,7 +6,7 @@ public class Resume
     public void _resumeDisplay()
     {
         Console.WriteLine($"{_name}");
-        foreach (string job in Job)
+        foreach (string job in _Jobs)
         {
 
 

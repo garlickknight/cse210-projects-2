@@ -14,7 +14,7 @@ class Program
 
         Resume resume = new Resume();
         resume._name = "Joseph Garlick";
-        resume.
+        resume._resumeDisplay();
 
         // resume._Jobs.Add("Physical Therapy technition");
         // resume._Jobs.Add("Physical Therapy Assistant");
