@@ -13,7 +13,7 @@ class Program
     {
         Console.WriteLine("Hello World! This is the Journal Project.");
         JournalEntry newJournal = new JournalEntry();
-        newJournal._prompts.Add("What was the highlight of your day?");
+        newJournal._prompts.Add("What was the highlight of your day today?");
         newJournal._prompts.Add("What was the lowlight of your day?");
         newJournal._prompts.Add("How did you see the hand of God today?");
         newJournal._prompts.Add("What was the best interaction that you had today?");
