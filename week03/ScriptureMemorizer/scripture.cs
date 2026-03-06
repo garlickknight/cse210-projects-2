@@ -5,7 +5,6 @@ public class scripture
 
     private List<word> _word = new List<word>();
 
-
-
+    public scripture.s 
 
 }
