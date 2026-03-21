@@ -70,7 +70,7 @@ class Program
                 journal.journal.Add(entry);
                 using (StreamWriter outputFile = new StreamWriter(fileName, true))
                 {
-                    outputFile.WriteLine(entry);
+                    outputFile.WriteLine(entry); 
                 }
 
 
