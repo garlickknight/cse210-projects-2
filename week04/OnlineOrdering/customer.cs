@@ -1,14 +1,25 @@
-using System.Diagnostics.Contracts;
-using System.Reflection.Metadata.Ecma335;
-
-public class customer
+public class Customer
 {
     private string name;
-    private address addy;
+    private Address addy;
 
-    public bool isInUS()
+    public Customer(string _name, Address address)
     {
-        
-        return 
-    };
-};
+        name = _name;
+        addy = address;
+    }
+
+    public string GetName()
+    {
+        return name;
+    }
+    public Address GetAddress()
+    {
+        return addy;
+    }
+
+    public bool IsInUS()
+    {
+        return addy.Location();
+    }
+}
