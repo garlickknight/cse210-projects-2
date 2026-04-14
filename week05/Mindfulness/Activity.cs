@@ -1,6 +1,5 @@
 using System.Data.SqlTypes;
 using System.Reflection.Metadata.Ecma335;
-using System.Runtime.CompilerServices;
 
 public class Activity
 {
