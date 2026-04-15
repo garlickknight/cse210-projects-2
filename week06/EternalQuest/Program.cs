@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-
+// AI asisted by helping me write this part of my code. I could not figure this part of my code out for a While, so I relied on AI for the large part of this code. 
 class Program
 {
     static void Main(string[] args)
