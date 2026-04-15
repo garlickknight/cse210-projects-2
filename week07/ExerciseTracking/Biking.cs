@@ -31,6 +31,11 @@ public class Cycling : Exercise
     {
         return speed;
     }
-    
+    public override string gettype()
+    {
+        return ("Cycling");
+        
+    }
+
     
 }

@@ -23,4 +23,8 @@ public class Swimming : Exercise
     {
         return getlength() / getdistance();
     }
+    public override string gettype()
+    {
+        return ("Swimming");
+    }
 }

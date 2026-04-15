@@ -23,10 +23,11 @@ public abstract class Exercise
     public abstract float getdistance();
     public abstract float getspeed();
     public abstract float getpace();
+    public abstract string gettype();
 
-    public string getSummary(string type)
+    public string getSummary()
     {
-        return $"{getdate()} {type} {getlength()}min: Distance {getdistance()} miles, Speed {getspeed()}mph, pace: {getpace()} min per mile";
+        return $"{getdate()} {gettype()} {getlength()}min: Distance {getdistance()} miles, Speed {getspeed()}mph, pace: {getpace()} min per mile";
     }
 
 

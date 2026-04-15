@@ -21,4 +21,8 @@ public class Running : Exercise
     {
         return getlength() / distance;
     }
+    public override string gettype()
+    {
+        return ("Running");
+    }
 }
