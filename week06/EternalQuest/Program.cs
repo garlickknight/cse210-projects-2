@@ -66,6 +66,7 @@ class Program
             }
         }
     }
+    // ...existing code...
 
     static void CreateGoal(List<Goal> goals)
     {
@@ -185,9 +186,9 @@ class Program
         }
 
         List<string> lines = new List<string>
-        {
-            $"Score|{totalScore}"
-        };
+    {
+        $"Score|{totalScore}"
+    };
 
         foreach (Goal goal in goals)
         {
@@ -217,39 +218,31 @@ class Program
             return;
         }
 
-        string[] lines = File.ReadAllLines(filePath);
         goals.Clear();
-        totalScore = 0;
+        string[] lines = File.ReadAllLines(filePath);
 
         foreach (string line in lines)
         {
             string[] parts = line.Split('|');
-            if (parts.Length == 0)
-            {
-                continue;
-            }
 
-            if (parts[0] == "Score" && parts.Length >= 2)
+            if (parts[0] == "Score")
             {
                 int.TryParse(parts[1], out totalScore);
             }
-            else if (parts[0] == "SimpleGoal" && parts.Length >= 5)
+            else if (parts[0] == "SimpleGoal")
             {
                 SimpleGoal simple = new SimpleGoal();
                 simple.goal(parts[1], parts[2], int.Parse(parts[3]));
-                if (bool.TryParse(parts[4], out bool isComplete))
-                {
-                    simple.SetComplete(isComplete);
-                }
+                simple.SetComplete(bool.Parse(parts[4]));
                 goals.Add(simple);
             }
-            else if (parts[0] == "EternalGoal" && parts.Length >= 4)
+            else if (parts[0] == "EternalGoal")
             {
                 EternalGoal eternal = new EternalGoal();
                 eternal.goal(parts[1], parts[2], int.Parse(parts[3]));
                 goals.Add(eternal);
             }
-            else if (parts[0] == "ChecklistGoal" && parts.Length >= 7)
+            else if (parts[0] == "ChecklistGoal")
             {
                 ChecklistGoal checklist = new ChecklistGoal(int.Parse(parts[4]), int.Parse(parts[5]));
                 checklist.goal(parts[1], parts[2], int.Parse(parts[3]));
@@ -260,4 +253,5 @@ class Program
 
         Console.WriteLine("Goals loaded.");
     }
+
 }

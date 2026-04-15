@@ -50,9 +50,11 @@ public abstract class Goal()
         return 0;
     }
 
-    public virtual string GetStatus(){
+    public virtual string GetStatus()
+    {
         return $"{name} ({description})";
     }
+    
 
 
 }
